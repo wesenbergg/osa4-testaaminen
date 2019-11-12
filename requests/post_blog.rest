@@ -1,0 +1,9 @@
+POST http://localhost:3003/api/blogs/
+Content-Type: application/json
+
+{
+  "title": "hermannin elamam kerTa",
+  "author": "hermanni",
+  "url": "www.hermanni.org",
+  "likes": 123
+}
