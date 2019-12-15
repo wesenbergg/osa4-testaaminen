@@ -1,9 +1,9 @@
-PUT http://localhost:3003/api/blogs/5dcaa23f41d9cc4e2c67186a
+PUT http://localhost:3003/api/blogs/5df4f24cc6887b058c8098d7
 Content-Type: application/json
 
 {
   "title": "hermannin elamam kerTa",
   "author": "hermanni",
   "url": "www.hermanni.org",
-  "likes": 6
+  "likes": 4
 }

@@ -41,7 +41,7 @@ blogRouter.post('/', async (request, response, next) => {
 
 blogRouter.put('/:id', async (req, res, next) => {
   try{
-    let updatedBlog = await Blog.findOneAndUpdate(
+    let updatedBlog = await Blog.findByIdAndUpdate(
       req.params.id,
       { 
         likes: req.body.likes
@@ -75,21 +75,6 @@ blogRouter.delete('/:id', async (request, response, next) => {
     }catch(e){
       next(e)
     }
-    
-    /*
-
-
-
-
-
- //handle !(user._id.toString() === blog.user.toString()) virheilmoitus
-
-
-
-
-
-    */
-   
   } catch (exception) {
     next(exception)
   }
